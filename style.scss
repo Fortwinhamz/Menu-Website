@@ -1,1 +1,118 @@
 @import 'config';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    // font-size: 62.5%;
+    color: $color-deep-blue;
+}
+
+main{
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        .title{
+            h2{
+                font-size: 2rem;
+                color: $color-deep-blue;
+                margin-bottom: 0.75rem;
+            }
+        }
+
+
+        .buttons-container{
+            margin-bottom: 4rem;
+            display: flex;
+            justify-content: center;
+
+
+            .menu-filter_btn{
+                background: transparent;
+                outline: none;
+                font-size: 1rem;
+                text-transform: capitalize;
+                color: $color-gold;
+                border: none;
+                margin: 0 0.5rem;
+                letter-spacing: 1px;
+                padding: .375rem .75rem;
+                cursor: pointer;
+                border-radius: 0.25rem;
+                transition: all .3s ease-in-out;
+
+
+                &:hover{
+                    background-color: $color-gold;
+                    color: $color-white;
+                }
+            }
+        }
+
+
+        .menu-section{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 90vw;
+            margin: 0 auto;
+            max-width: 1170px;
+            grid-gap: 3rem 2rem;
+            gap: 3rem 2rem;
+            justify-content: center;
+
+            .menu-box{
+                display: grid;
+                grid-template-columns: 225px 1fr;
+                grid-gap: 0rem 1.25rem;
+                gap: 0rem 1.25rem;
+                max-width: 40rem;
+                
+
+
+                .image{
+                    border-radius: .3rem;
+                    object-fit: cover; 
+                    height: 150px;
+                    width: 100%;
+                    border: 0.25rem solid $color-gold;
+                    display: block;
+                }
+
+
+                .box-text{
+
+                    .text-header{
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: .5px dotted $color-gray;
+
+                        h4{
+                            font-size: .875rem;
+                            margin-bottom: 0.5rem;
+                        }
+
+                        .price{
+                            color: $color-gold;
+                        }
+                    }
+
+
+                    .text-para{
+                        font-size: 1rem;
+                        margin-bottom: 0;
+                        padding-top: 1rem;
+                        color: $color-gray;
+                    }
+                }
+            }
+        }
+    }
+}
