@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap');
 @import 'config';
 
 
@@ -8,12 +9,14 @@
 }
 
 body{
-    // font-size: 62.5%;
+    font-size: 62.5%;
     color: $color-deep-blue;
+    font-family: 'Open Sans', sans-serif;
 }
 
 main{
     .menu{
+        width: 95vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -69,6 +72,7 @@ main{
             justify-content: center;
 
             .menu-box{
+                display: block;
                 display: grid;
                 grid-template-columns: 225px 1fr;
                 grid-gap: 0rem 1.25rem;
@@ -88,7 +92,8 @@ main{
 
 
                 .box-text{
-
+                    justify-content: center;
+                    align-items: center;
                     .text-header{
                         display: flex;
                         justify-content: space-between;
@@ -106,7 +111,7 @@ main{
 
 
                     .text-para{
-                        font-size: 1rem;
+                        font-size: .8rem;
                         margin-bottom: 0;
                         padding-top: 1rem;
                         color: $color-gray;
