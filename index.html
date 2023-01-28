@@ -1,235 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fortwin || Food Menu Website</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <main>
-        <section class="menu section">
-            <div class="title">
-                <h2>Our Menu</h2>
+      <section class="menu section">
+        <div class="title">
+          <h2>Our Menu</h2>
+        </div>
+
+        <div class="buttons-container">
+          <button type="button" class="menu-filter_btn js-menu-filter-btn" data-menu-filter="all" data-container-id="menu-section">All</button>
+          <button type="button" class="menu-filter_btn js-menu-filter-btn" data-menu-filter="breakfast" data-container-id="menu-section">
+            Breakfast
+          </button>
+          <button type="button" class="menu-filter_btn js-menu-filter-btn" data-menu-filter="lunch" data-container-id="menu-section">
+            Lunch
+          </button>
+          <button id="shakesId" type="button" class="menu-filter_btn js-menu-filter-btn" data-menu-filter="shakes" data-container-id="menu-section">
+            Shakes
+          </button>
+        </div>
+
+        <div class="menu-section" id="menu-section">
+          <div class="menu-box breakfast">
+            <img src="./images/item-1.jpeg" class="image" alt="" />
+
+            <div class="box-text">
+              <div class="text-header">
+                <h4>buttermilk pancakes</h4>
+                <h4 class="price">$15</h4>
+              </div>
+
+              <p class="text-para">
+                I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                freegan copper mug whatever cold-pressed
+              </p>
             </div>
-    
-    
-            <div class="buttons-container">
-                <button  type="button" class="menu-filter_btn">All</button>
-                <button id="breakfastId" type="button" class="menu-filter_btn">Breakfast</button>
-                <button id="lunchId" type="button" class="menu-filter_btn">Lunch</button>
-                <button id="shakesId" type="button" class="menu-filter_btn">Shakes</button>
+          </div>
+
+          <div class="menu-box lunch">
+            <img src="./images/item-2.jpeg" class="image" alt="" />
+
+            <div class="box-text">
+              <div class="text-header">
+                <h4>Dinner Double</h4>
+                <h4 class="price">$15</h4>
+              </div>
+
+              <div class="text-para">
+                I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                freegan copper mug whatever cold-pressed
+              </div>
             </div>
-    
-            <div class="menu-section">
-                <div class="menu-box" id="breakfast">
-                    <img src="./images/item-1.jpeg" class="image"  alt="">
+          </div>
 
-                    <div class="box-text">
+          <div class="menu-box shakes">
+            <img src="./images/item-3.jpeg" class="image" alt="" />
 
-                        <div class="text-header">
-                            <h4>buttermilk pancakes</h4>
-                            <h4 class="price">$15</h4>
-                        </div>
+            <div class="box-text">
+              <div class="text-header">
+                <h4>Godzilla Milkshake</h4>
+                <h4 class="price">$15</h4>
+              </div>
 
-
-                        <p class="text-para">
-                            I'm baby woke mlkshk wolf bitters live-edge blue bottle,
-                             hammock freegan copper mug whatever cold-pressed 
-                        </p>
-                        
-                    </div>
-                </div>
-
-
-                
-                
-                <div class="menu-box lunch">
-                    <img src="./images/item-2.jpeg" class="image"  alt="">
-
-                    <div class="box-text">
-
-                        <div class="text-header">
-                            <h4>Dinner Double</h4>
-                            <h4 class="price">$15</h4>
-                        </div>
-
-
-                        <div class="text-para">
-                            I'm baby woke mlkshk wolf bitters live-edge blue bottle,
-                             hammock freegan copper mug whatever cold-pressed 
-                        </div>
-                        
-                    </div>
-                </div>
-
-
-                
-                
-                <div class="menu-box shakes" id="shakes">
-                    <img src="./images/item-3.jpeg" class="image"  alt="">
-
-                    <div class="box-text">
-
-                        <div class="text-header">
-                            <h4>Godzilla Milkshake</h4>
-                            <h4 class="price">$15</h4>
-                        </div>
-
-
-                        <div class="text-para">
-                            I'm baby woke mlkshk wolf bitters live-edge blue bottle,
-                             hammock freegan copper mug whatever cold-pressed 
-                        </div>
-                        
-                    </div>
-                </div>
-
-
-                
-                
-                <div class="menu-box" id="breakfast">
-                    <img src="./images/item-4.jpeg" class="image"  alt="">
-
-                    <div class="box-text">
-
-                        <div class="text-header">
-                            <h4>Country Delight</h4>
-                            <h4 class="price">$15</h4>
-                        </div>
-
-
-                        <div class="text-para">
-                            I'm baby woke mlkshk wolf bitters live-edge blue bottle,
-                             hammock freegan copper mug whatever cold-pressed 
-                        </div>
-                        
-                    </div>
-                </div>
-
-
-                
-                
-                <div class="menu-box lunch">
-                    <img src="./images/item-5.jpeg" class="image"  alt="">
-
-                    <div class="box-text">
-
-                        <div class="text-header">
-                            <h4>Egg Attack</h4>
-                            <h4 class="price">$15</h4>
-                        </div>
-
-
-                        <div class="text-para">
-                            I'm baby woke mlkshk wolf bitters live-edge blue bottle,
-                             hammock freegan copper mug whatever cold-pressed 
-                        </div>
-                        
-                    </div>
-                </div>
-
-
-                
-                
-                <div class="menu-box" id="shakes">
-                    <img src="./images/item-6.jpeg" class="image"  alt="">
-
-                    <div class="box-text">
-
-                        <div class="text-header">
-                            <h4>Oreo Dream</h4>
-                            <h4 class="price">$15</h4>
-                        </div>
-
-
-                        <div class="text-para">
-                            I'm baby woke mlkshk wolf bitters live-edge blue bottle,
-                             hammock freegan copper mug whatever cold-pressed 
-                        </div>
-                        
-                    </div>
-                </div>
-
-
-                
-                
-                <div class="menu-box" id="breakfast">
-                    <img src="./images/item-7.jpeg" class="image"  alt="">
-
-                    <div class="box-text">
-
-                        <div class="text-header">
-                            <h4>Bacon Overflow</h4>
-                            <h4 class="price">$15</h4>
-                        </div>
-
-
-                        <div class="text-para">
-                            I'm baby woke mlkshk wolf bitters live-edge blue bottle,
-                             hammock freegan copper mug whatever cold-pressed 
-                        </div>
-                        
-                    </div>
-                </div>
-
-
-                
-                
-                
-                <div class="menu-box lunch">
-                    <img src="./images/item-8.jpeg" class="image"  alt="">
-
-                    <div class="box-text">
-
-                        <div class="text-header">
-                            <h4>American Classic</h4>
-                            <h4 class="price">$15</h4>
-                        </div>
-
-
-                        <div class="text-para">
-                            I'm baby woke mlkshk wolf bitters live-edge blue bottle,
-                             hammock freegan copper mug whatever cold-pressed 
-                        </div>
-                        
-                    </div>
-                </div>
-
-
-                
-                
-
-                <div class="menu-box" id="shakes">
-                    <img src="./images/item-9.jpeg" class="image"  alt="">
-
-                    <div class="box-text">
-
-                        <div class="text-header">
-                            <h4>Quarantine Buddy</h4>
-                            <h4 class="price">$15</h4>
-                        </div>
-
-
-                        <div class="text-para">
-                            I'm baby woke mlkshk wolf bitters live-edge blue bottle,
-                             hammock freegan copper mug whatever cold-pressed 
-                        </div>
-                        
-                    </div>
-                </div>
-
-
-                
-                
-
-
+              <div class="text-para">
+                I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                freegan copper mug whatever cold-pressed
+              </div>
             </div>
-        </section>
+          </div>
+
+          <div class="menu-box breakfast">
+            <img src="./images/item-4.jpeg" class="image" alt="" />
+
+            <div class="box-text">
+              <div class="text-header">
+                <h4>Country Delight</h4>
+                <h4 class="price">$15</h4>
+              </div>
+
+              <div class="text-para">
+                I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                freegan copper mug whatever cold-pressed
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-box lunch">
+            <img src="./images/item-5.jpeg" class="image" alt="" />
+
+            <div class="box-text">
+              <div class="text-header">
+                <h4>Egg Attack</h4>
+                <h4 class="price">$15</h4>
+              </div>
+
+              <div class="text-para">
+                I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                freegan copper mug whatever cold-pressed
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-box shakes">
+            <img src="./images/item-6.jpeg" class="image" alt="" />
+
+            <div class="box-text">
+              <div class="text-header">
+                <h4>Oreo Dream</h4>
+                <h4 class="price">$15</h4>
+              </div>
+
+              <div class="text-para">
+                I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                freegan copper mug whatever cold-pressed
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-box breakfast">
+            <img src="./images/item-7.jpeg" class="image" alt="" />
+
+            <div class="box-text">
+              <div class="text-header">
+                <h4>Bacon Overflow</h4>
+                <h4 class="price">$15</h4>
+              </div>
+
+              <div class="text-para">
+                I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                freegan copper mug whatever cold-pressed
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-box lunch">
+            <img src="./images/item-8.jpeg" class="image" alt="" />
+
+            <div class="box-text">
+              <div class="text-header">
+                <h4>American Classic</h4>
+                <h4 class="price">$15</h4>
+              </div>
+
+              <div class="text-para">
+                I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                freegan copper mug whatever cold-pressed
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-box shakes">
+            <img src="./images/item-9.jpeg" class="image" alt="" />
+
+            <div class="box-text">
+              <div class="text-header">
+                <h4>Quarantine Buddy</h4>
+                <h4 class="price">$15</h4>
+              </div>
+
+              <div class="text-para">
+                I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                freegan copper mug whatever cold-pressed
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
