@@ -8,7 +8,7 @@
 
 gsap.from('.title', { duration:1, x: '100%', ease: 'bounce'})
 // gsap.from('.menu-box', { duration:2, y: '-100%', stagger: .5})
-gsap.from('.menu-box', { duration: 5, y: '100%', ease: 'bounce'})
+gsap.from('.menu-box', { duration: 2, y: '50%', ease: 'bounce'})
 
 
 
