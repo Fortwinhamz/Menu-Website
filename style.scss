@@ -184,14 +184,20 @@ main{
     main{
 
         margin: 2rem;
-        // .menu{
 
-        //     .menu-section{
+        .buttons-container{
+            .menu-filter_btn{
+                font-size: .8rem;
+            }
+        }
+        .menu{
+            width: 80vw;
+            .menu-section{
 
-        //         .menu-box{
-        //             // max-width: 15rem;
-        //         }
-        //     }
-        // }
+                .menu-box{
+                    max-width: 20rem;
+                }
+            }
+        }
     }
 }
