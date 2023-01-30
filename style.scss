@@ -12,6 +12,7 @@ body{
     font-size: 62.5%;
     color: $color-deep-blue;
     font-family: 'Open Sans', sans-serif;
+    background-color: $background-color-gray;
 }
 
 main{
@@ -101,6 +102,7 @@ main{
                         h4{
                             font-size: .875rem;
                             margin-bottom: 0.5rem;
+                            text-transform:capitalize;
                         }
 
                         .price{
@@ -114,6 +116,62 @@ main{
                         margin-bottom: 0;
                         padding-top: 1rem;
                         color: $color-gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    main{
+        .menu{
+            .menu-section{
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    main{
+        .menu{
+            width: auto;
+            margin: 4rem;
+
+
+            .menu-section{
+                gap: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 730px){
+    main{
+        .menu{
+
+            .menu-section{
+                
+                .menu-box{
+                    display: flex;
+                    gap: 1rem 2rem;
+                    flex-direction: column;
+                    max-width: 25rem;
+
+                    .image{
+                        object-fit: cover;
+                    }
+
+                    .box-text{
+                        h4{
+                            text-transform:capitalize;
+                        }
                     }
                 }
             }
