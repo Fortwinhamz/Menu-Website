@@ -6,11 +6,20 @@
 // }
 
 
+gsap.from('.title', { duration:1, x: '100%', ease: 'bounce'})
+// gsap.from('.menu-box', { duration:2, y: '-100%', stagger: .5})
+gsap.from('.menu-box', { duration: 5, x: '-50%', ease: 'bounce'})
+
+
+
 document.querySelectorAll('.js-menu-filter-btn').forEach(function(btn){
     btn.addEventListener('click', function(){
         const filterStr = btn.getAttribute('data-menu-filter');
         const containerId = btn.getAttribute('data-container-id');
         filterMenuCards(filterStr, containerId)
+
+        gsap.from('.menu-box', { duration:3, x: '100%', ease: 'bounce'})
+
     })
 })
 
